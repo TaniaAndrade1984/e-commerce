@@ -5,8 +5,8 @@ const Home: React.FC = () => {
     return (
         <div>
             <h1>Olá!!! Seja bem-vindo(a) à Mafê Makeup!!!</h1>
-            <Link href="/login">Fazer login</Link>
-            <Link href="/cadastro">Cadastrar</Link>
+            <Link href="/Login">Fazer login</Link>
+            <Link href="/Register">Cadastrar</Link>
         </div>
     );
 };

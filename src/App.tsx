@@ -1,18 +1,23 @@
-
-import React from "react";
-import Link from "next/link";
+// src/App.tsx
+import React from 'react';
+import Header from './components/Header';
+import ProductList from './components/ProductList';
 
 const App: React.FC = () => {
-    return (
-        <div>
-            <h1>Minha Aplicação de E-Commerce</h1>
-            <Link href="/home">Ir para a página inicial</Link>
-            <Link href="/login">Faça login</Link>
-            <Link href="/cadastro">Crie uma conta</Link>
-        </div>
-    );
+  // Exemplo de dados de produtos
+  const products = [
+    { id: 1, name: 'Batom Vermelho', price: 25.99, imageUrl: 'url_da_imagem' },
+    // Adicione mais produtos conforme necessário
+  ];
+
+  return (
+    <div className="app">
+      <Header />
+      <main>
+        <ProductList products={products} />
+      </main>
+    </div>
+  );
 };
 
 export default App;
-
-
